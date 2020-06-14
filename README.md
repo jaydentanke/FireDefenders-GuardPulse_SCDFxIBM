@@ -1,12 +1,25 @@
 # Guardpulse
 
+## About Us
+
+Jayden Tan 
+- Carnegie Mellon University Computer Science
+- SCDF Medical Analytics during NS
+- Software engineer intern at Stripe
+
+Kenny Hu
+- Carnegie Mellon University Information Systems
+- Officer and Medic in SAF
+
+We are very interested in the EMS problem space due to our past experiences :)
+
 ## Problem (Community First Responders)
 
 There is an increasing number of elderly living alone at home. The Department of Statistics estimates that 83000 elderly persons (aged 65 and up) will be living alone by 2030 compared to 47000 in 2016. [(Source)](https://www.todayonline.com/voices/more-seniors-living-alone-knowing-and-caring-our-neighbours-should-be-norm).
 
 This group is extremely vulnerable to accidents at home, since there is often nobody checking up on them. In some cases, the lack of monitoring results in avoidable deaths. [(Source)][https://www.channelnewsasia.com/news/cnainsider/when-someone-dies-alone-singapore-this-is-what-happens-seniors-12498032]
 
-However, there is currently no feasible way to watch over these elderly to provide them with rapid treatment. In addition, it will be extremely manpower-intensive for SCDF to keep track of these elderly, triage medical cases and treat them using Emergency Medical Services.
+However, there is currently no feasible way to watch over these elderly to provide them with rapid treatment. In addition, it will be extremely manpower-intensive for SCDF to manually keep track of these elderly, coordinate community first responders , triage medical cases and treat them using Emergency Medical Services. In many cases, they may be non-emergency cases, placing unnecessary strain on ambulance forces.
 
 ## Solution
 
@@ -22,7 +35,7 @@ Concurrently, multiple actions are performed automatically by GuardPulse to atte
 * Automatic analysis of all calls and chats to update assessment of medical situation without human intervention
 * Provides reccomendation to 911 Operator based on data collected from IoT devices alone, or together with updates from call with patient and community first responder.
  
-Community first responders will be automatically activated and sent details of the detected emergency. Thereafter, GuardPulse uses a chatbot to communicate with the CFR and ask about the situation of the patient. By analyzing the conversation between the chatbot and the CFR using IBM Watson Machine Learning, GuardPulse either escalates the situation to a medical emergency or de-escalates to a non-emergency.
+Throughout the process, there is minimal human intervetion from SCDF since most interactions are automated. Nevertheless, SCDF can track all the available information from IoTs and chats with CFR and patient through GuardPulse Dashboard, and intervene if necessary. This can be used to further train the AI and improve the intelligent incident handling.
 
 ## Architecture
 
@@ -30,8 +43,14 @@ GuardPulse is built on a Node-RED instance on IBM Cloud. Our Node-RED implementa
 
 ## Detailed solution
 
-## IoT accident detection system
+### IoT accident detection system
 Firstly, passive infra-red motion detectors (similar to those found in intruder alarms) are installed in each room. These enable us to track movements without invading on the privacy of residents. Additionally, a smart home speaker system like Amazon Echo is installed. The Amazon Echo is customized to respond to distress calls or loud noises that could indicate and emergency. It is a cheap and effective device that does not record any audio until such triggers are detected, mantaining privacy.  Data from these devices is transmitted to the Guardpulse cloud, which uses deep learning to detect accidents.
+
+### AI
+We train AI to detect abnormal movement patterns in the house (lack of motion for sustained periods during the day, struggling on ground). Amazon Echo contains APIs that enable us to customize it to recognize calls for help in multiple langauges.
+
+### Chatbot
+We definted various chat interactions. A call to the patient will ask if the patient about his situation using a computer generated call in his mother tongue or english, and automatically analyze his response to update the medical assessment. If no response, CFR is activated and a chatbot prompts him to head to the patient location to check on patient. Using phone location services to determine when CFR has arrived on scene, chatbot automatically asks for update on patient, and analyzes the chat to update medical assesment. The natural language understanding is powered by IBM Watson ML platform.
 
 ## Running the app
 
