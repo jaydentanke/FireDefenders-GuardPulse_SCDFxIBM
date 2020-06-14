@@ -15,9 +15,9 @@ We are very interested in the EMS problem space due to our past experiences :)
 
 ## Problem (Community First Responders)
 
-There is an increasing number of elderly living alone at home. The Department of Statistics estimates that 83000 elderly persons (aged 65 and up) will be living alone by 2030 compared to 47000 in 2016. [(Source)](https://www.todayonline.com/voices/more-seniors-living-alone-knowing-and-caring-our-neighbours-should-be-norm).
+There is an increasing number of elderly living alone at home. The Department of Statistics estimates that 83000 elderly persons (aged 65 and up) will be living alone by 2030 compared to 47000 in 2016. [Source](https://www.todayonline.com/voices/more-seniors-living-alone-knowing-and-caring-our-neighbours-should-be-norm).
 
-This group is extremely vulnerable to accidents at home, since there is often nobody checking up on them. In some cases, the lack of monitoring results in avoidable deaths. [(Source)][https://www.channelnewsasia.com/news/cnainsider/when-someone-dies-alone-singapore-this-is-what-happens-seniors-12498032]
+This group is extremely vulnerable to accidents at home, since there is often nobody checking up on them. In some cases, the lack of monitoring results in avoidable deaths. [Source](https://www.channelnewsasia.com/news/cnainsider/when-someone-dies-alone-singapore-this-is-what-happens-seniors-12498032)
 
 However, there is currently no feasible way to watch over these elderly to provide them with rapid treatment. In addition, it will be extremely manpower-intensive for SCDF to manually keep track of these elderly, coordinate community first responders , triage medical cases and treat them using Emergency Medical Services. In many cases, they may be non-emergency cases, placing unnecessary strain on ambulance forces.
 
