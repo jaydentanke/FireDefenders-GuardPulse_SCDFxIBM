@@ -11,7 +11,9 @@ Kenny Hu
 - Carnegie Mellon University Information Systems
 -  Medic in SAF during NS
 
-## Slides
+## Video
+
+https://www.youtube.com/watch?v=iivANLl9zas
 
 https://docs.google.com/presentation/d/1Nv_qDKJ8mrf8Lx608STURniC-rioaAYAj8XR5YSQlZ8/edit?usp=sharing
 ## Problem (Community First Responders)
