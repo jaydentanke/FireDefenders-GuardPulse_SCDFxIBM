@@ -60,6 +60,7 @@ We definted various chat interactions. A call to the patient will ask if the pat
 
 Run the following commands after cloning
 `npm install`
+
 `npm run develop`
 
 Go to http://locahost:3000
