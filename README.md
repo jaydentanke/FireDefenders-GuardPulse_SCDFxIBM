@@ -9,9 +9,7 @@ Jayden Tan
 
 Kenny Hu
 - Carnegie Mellon University Information Systems
-- Officer and Medic in SAF
-
-We are very interested in the EMS problem space due to our past experiences :)
+- Officer and Medic in SAF during NS
 
 ## Slides
 
