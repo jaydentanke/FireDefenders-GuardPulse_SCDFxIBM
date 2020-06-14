@@ -9,7 +9,7 @@ Jayden Tan
 
 Kenny Hu
 - Carnegie Mellon University Information Systems
-- Officer and Medic in SAF during NS
+-  Medic in SAF during NS
 
 ## Slides
 
