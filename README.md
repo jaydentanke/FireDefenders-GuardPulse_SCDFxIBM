@@ -13,6 +13,9 @@ Kenny Hu
 
 We are very interested in the EMS problem space due to our past experiences :)
 
+## Slides
+
+https://docs.google.com/presentation/d/1Nv_qDKJ8mrf8Lx608STURniC-rioaAYAj8XR5YSQlZ8/edit?usp=sharing
 ## Problem (Community First Responders)
 
 There is an increasing number of elderly living alone at home. The Department of Statistics estimates that 83000 elderly persons (aged 65 and up) will be living alone by 2030 compared to 47000 in 2016. [Source](https://www.todayonline.com/voices/more-seniors-living-alone-knowing-and-caring-our-neighbours-should-be-norm).
