@@ -10,14 +10,16 @@ However, there is currently no feasible way to watch over these elderly to provi
 
 ## Solution
 
-We developed GuardPulse, an IoT and AI platform that enables the automatic detection of accidents. The first component of GuardPulse is a network of IoT devices in the homes of the elderly. This network of motion detectors and distress call detectors enable us to ascertain when accidents have occured. 
+We developed GuardPulse, an IoT and AI platform that enables the automatic detection of accidents. The first component of GuardPulse is a network of IoT devices in the homes of the elderly. IoT devices inlcude motion detectors and distress call detectors (shouting for help or loud knocks) enable us to ascertain when accidents have occured. 
 
-Once the GuardPulse AI determines that an accident has occured, GuardPulse takes appropriate actions based on its prediction of the accident type. Firstly, SCDF will be able to keep track of these cases via the GuardPulse Dashboard. 
+Once the GuardPulse AI determines that an accident has occured, GuardPulse will begin to take tiered actions to ascertain if the patient requires emergency medical services. Throughout the process, SCDF will be able to keep track of these cases via the GuardPulse Dashboard to provide manual intervention if necessaary.
 
-Concurrently, multiple actions are performed automatically by GuardPulse
-* Computer-generated call to patient's mobile phone or home line in his registered langauge using machine translation
-* Activate Community First Responder and start chatbot with community first responder in myResponder
-* Continued analysis of all calls and chats to update assessment of medical situation
+Concurrently, multiple actions are performed automatically by GuardPulse to attempt to determine if the patient needs urgent medical assitance.
+* Call to patient's mobile phone or home line to try to establish contact. This call is performed by a computer and can take place in any language using machine translation
+* Amazon Echo smart home speaker is activated, asking patient if he needs help. Patient can issue commands to echo, including calling 911 or that he is fine.
+### If there is no response on the above two channels, CFRs are activated
+* Activate Community First Responde. Details of the incident are provided to the CFR. IBM Watson chatbot is used to prompt CFR to check on suspected patient and ask for real-time updates.
+* Automatic analysis of all calls and chats to update assessment of medical situation without human intervention
 * Provides reccomendation to 911 Operator based on data collected from IoT devices alone, or together with updates from call with patient and community first responder.
  
 Community first responders will be automatically activated and sent details of the detected emergency. Thereafter, GuardPulse uses a chatbot to communicate with the CFR and ask about the situation of the patient. By analyzing the conversation between the chatbot and the CFR using IBM Watson Machine Learning, GuardPulse either escalates the situation to a medical emergency or de-escalates to a non-emergency.
